@@ -13,20 +13,8 @@ A marketing team is spending budget sending campaigns to **all customers equally
 - **Who is NOT worth spending money on?**
 
 ---
-
 ## 💡 Key Business Findings
-
-| Metric | Result |
-|--------|--------|
-| Customer Segments Identified | 4 |
-| Overall Churn Rate | ~25% |
-| At-Risk Customers | 574 |
-| Retention Campaign Cost | $8,610 |
-| Estimated Revenue Saved | $22,752 |
-| **ROI** | **164%** |
-
-> Every $1 spent on targeted retention returns $2.60 in saved customer revenue.
-
+<img width="615" height="162" alt="image" src="https://github.com/user-attachments/assets/f36d9e5c-bb88-4bf7-9dfe-862c8632dd3d" />
 
 ## 🔄 Project Workflow
 
@@ -58,24 +46,6 @@ CLV Calculation + Business Recommendations + ROI
 <img width="1266" height="432" alt="MCA3" src="https://github.com/user-attachments/assets/6749c9ac-dbd8-4398-b419-7499d35cb091" />
 <img width="1117" height="777" alt="MCA4" src="https://github.com/user-attachments/assets/8d3ee4ab-3366-4092-a317-f7d9201e9956" />
 <img width="1097" height="787" alt="MCA5" src="https://github.com/user-attachments/assets/e9d7786c-0fe1-4a8c-9dac-c1ca68be8ae0" />
-
-
-
-## 🤖 Models Trained
-
-| Model | Purpose | Key Metric |
-|-------|---------|------------|
-| Logistic Regression | Baseline interpretable model | Recall |
-| SVM | Non-linear boundary detection | Recall |
-| Random Forest | Ensemble, handles non-linear | ROC-AUC |
-| **XGBoost** | **Best performer — selected** | **ROC-AUC** |
-| LightGBM | Fastest, large dataset ready | ROC-AUC |
-
-**Why Recall over Accuracy?**
-Missing a churning customer (False Negative) costs far more than sending an unnecessary retention offer (False Positive). A lost Champion = hundreds in lost revenue. An unnecessary $15 coupon = $15 cost. We optimize to catch as many churners as possible.
-
-**Why XGBoost over LR and SVM?**
-XGBoost handles non-linear relationships automatically, provides native feature importance, and consistently outperforms linear models on real-world tabular data without requiring the scaling that SVM needs.
 
 ---
 
@@ -131,6 +101,9 @@ Churn at 180 days vs 90 days vs behavioral signals — each gives a different an
 **3. Interpretation beats accuracy**
 A 164% ROI estimate communicates more to a marketing team than a 0.82 ROC-AUC score. Always translate model output into business language.
 
+| Top Churn Driver | TotalPurchases (56%) |
+| 2nd Driver | Web visits without buying (34%) |
+| 3rd Driver | Zero campaign response (9%) |
 ---
 
 ## 👩‍💻 Author
