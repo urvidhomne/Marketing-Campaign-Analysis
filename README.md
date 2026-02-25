@@ -7,11 +7,14 @@
 
 A marketing team is spending budget sending campaigns to **all customers equally**. This is wasteful and ineffective. This project answers four critical business questions:
 
-- **Who are our best customers?**
-- **Who is about to leave?**
-- **Where should we spend our retention budget?**
-- **Who is NOT worth spending money on?**
-
+**Who are our best customers?**
+→ Champions segment — 541 customers, avg CLV $1,248, 0% churn rate. Identified through KMeans clustering on RFM scores. 
+**Who is about to leave?**
+→ At-Risk segment — 574 customers, 27% churn rate. Predicted using LightGBM churn model with 60.3% recall. 
+**Where should we spend our retention budget?**
+→ At-Risk customers. $15 retention offer per customer yields 164% ROI. Champions need VIP treatment, not discounts. 
+**Who is NOT worth spending money on?**
+→ Lost Customers — 606 customers, avg CLV $131. Retention cost exceeds their lifetime value. One reactivation email only, then remove from active marketing list.
 ---
 ## 💡 Key Business Findings
 <img width="615" height="162" alt="image" src="https://github.com/user-attachments/assets/f36d9e5c-bb88-4bf7-9dfe-862c8632dd3d" />
@@ -67,7 +70,6 @@ CLV Calculation + Business Recommendations + ROI
 | Matplotlib / Seaborn | Visualizations |
 | Jupyter Notebook | Development environment |
 
-
 ## 🔑 Key Learnings
 
 **1. Feature engineering matters more than model choice**
@@ -82,9 +84,8 @@ A 164% ROI estimate communicates more to a marketing team than a 0.82 ROC-AUC sc
 | Top Churn Driver | TotalPurchases (56%) |
 | 2nd Driver | Web visits without buying (34%) |
 | 3rd Driver | Zero campaign response (9%) |
----
 
-## 👩‍💻 Author
-**Urvi Dhomne** 
+
+## 👩‍💻 Author: Urvi Dhomne
 ---
 *Dataset: Kaggle Marketing Campaign | Tools: Python, Scikit-learn, XGBoost | **Source:** [Kaggle — Marketing Campaign Dataset](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign/data)*
