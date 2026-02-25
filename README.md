@@ -27,28 +27,6 @@ A marketing team is spending budget sending campaigns to **all customers equally
 
 > Every $1 spent on targeted retention returns $2.60 in saved customer revenue.
 
----
-
-## 📁 Project Structure
-
-```
-marketing-campaign-analysis/
-│
-├── marketing_campaign_jupyter.py   # Full analysis notebook
-├── marketing_campaign.xlsx         # Raw dataset (Kaggle)
-├── customer_segments_results.csv   # Model output — segment labels + churn scores
-│
-├── images/
-│   ├── eda_overview.png            # Customer behavior distributions
-│   ├── correlation_heatmap.png     # Feature correlations
-│   ├── elbow_plot.png              # Optimal cluster selection
-│   ├── segment_profiles.png        # RFM profiles per segment
-│   └── feature_importance.png      # Churn drivers
-│
-└── README.md
-```
-
----
 
 ## 🔄 Project Workflow
 
@@ -75,55 +53,13 @@ CLV Calculation + Business Recommendations + ROI
 ---
 
 ## 📊 Visualizations
+<img width="1093" height="688" alt="MCA1" src="https://github.com/user-attachments/assets/5acbd342-5f46-4c0b-b33b-ced85cb1f9db" />
+<img width="1101" height="780" alt="MCA2" src="https://github.com/user-attachments/assets/3d016af7-7733-48ac-9441-0dcb82688881" />
+<img width="1266" height="432" alt="MCA3" src="https://github.com/user-attachments/assets/6749c9ac-dbd8-4398-b419-7499d35cb091" />
+<img width="1117" height="777" alt="MCA4" src="https://github.com/user-attachments/assets/8d3ee4ab-3366-4092-a317-f7d9201e9956" />
+<img width="1097" height="787" alt="MCA5" src="https://github.com/user-attachments/assets/e9d7786c-0fe1-4a8c-9dac-c1ca68be8ae0" />
 
-### Customer Behavior Overview
-![EDA Overview](images/eda_overview.png)
 
-*Distribution of spending, age, purchases, and campaign response rate across 2,216 customers.*
-
----
-
-### Feature Correlations
-![Correlation Heatmap](images/correlation_heatmap.png)
-
-*Income and total spend show the strongest positive correlation with campaign response.*
-
----
-
-### Optimal Number of Segments
-![Elbow Plot](images/elbow_plot.png)
-
-*Elbow method and silhouette scores used to justify k=4 clusters. Picking k arbitrarily without this analysis risks creating meaningless segments.*
-
----
-
-### Customer Segment Profiles
-![Segment Profiles](images/segment_profiles.png)
-
-*Four distinct segments identified by RFM behavior. Champions spend 10x more than Lost customers and respond to campaigns at significantly higher rates.*
-
----
-
-### Churn Drivers
-![Feature Importance](images/feature_importance.png)
-
-*Top drivers of churn:*
-- **TotalPurchases** — infrequent buyers churn fastest
-- **NumWebVisitsMonth** — high browsing with no buying = disengaging customer
-- **AcceptedCmp_Total** — customers who never respond to any campaign are checked out
-
----
-
-## 👥 Customer Segments
-
-| Segment | Behavior Profile | Action |
-|---------|-----------------|--------|
-| 🏆 **Champions** | Low recency, high frequency, high spend | Reward and protect — VIP access, referral requests |
-| ⭐ **Loyal Customers** | Medium everything, consistent buyers | Upsell and cross-sell — personalized recommendations |
-| ⚠️ **At-Risk** | Rising recency, dropping engagement | **Urgent** — time-limited win-back offer, multichannel |
-| 📉 **Lost Customers** | High recency, low frequency, low spend | Minimal investment — one reactivation email only |
-
----
 
 ## 🤖 Models Trained
 
@@ -183,59 +119,6 @@ ROI:                164%
 | Matplotlib / Seaborn | Visualizations |
 | Jupyter Notebook | Development environment |
 
----
-
-## 🚀 How to Run
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/urvidhomne/marketing-campaign-analysis.git
-cd marketing-campaign-analysis
-```
-
-**2. Install dependencies**
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost lightgbm openpyxl jupyter
-```
-
-**3. Add the dataset**
-
-Download `marketing_campaign.xlsx` from [Kaggle](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign/data) and place it in the root folder.
-
-**4. Run the notebook**
-```bash
-jupyter notebook marketing_campaign_jupyter.py
-```
-
-Run cells top to bottom. Each cell has Q&A comments explaining what and why.
-
-**5. Find your outputs**
-```
-eda_overview.png
-correlation_heatmap.png
-elbow_plot.png
-segment_profiles.png
-feature_importance.png
-customer_segments_results.csv   ← segment labels + churn probabilities for every customer
-```
-
----
-
-## 📋 Dataset
-
-**Source:** [Kaggle — Marketing Campaign Dataset](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign/data)
-
-**Size:** 2,240 customers × 29 features
-
-**Key columns used:**
-- `Recency` — days since last purchase
-- `MntWines`, `MntFruits`, etc. → combined into `MntTotalExpense`
-- `NumWebPurchases`, `NumStorePurchases`, etc. → combined into `TotalPurchases`
-- `AcceptedCmp1-5` → combined into `AcceptedCmp_Total`
-- `Response` — response to last campaign (original target)
-- `IsChurned` — engineered churn label (our primary target)
-
----
 
 ## 🔑 Key Learnings
 
@@ -251,11 +134,10 @@ A 164% ROI estimate communicates more to a marketing team than a 0.82 ROC-AUC sc
 ---
 
 ## 👩‍💻 Author
-
 **Urvi Dhomne**
 Washington DC | Open to Relocate
 [LinkedIn](https://linkedin.com/in/urvidhomne) | [GitHub](https://github.com/urvidhomne)
 
 ---
 
-*Dataset: Kaggle Marketing Campaign | Tools: Python, Scikit-learn, XGBoost*
+*Dataset: Kaggle Marketing Campaign | Tools: Python, Scikit-learn, XGBoost | **Source:** [Kaggle — Marketing Campaign Dataset](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign/data)*
