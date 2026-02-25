@@ -48,31 +48,9 @@ CLV Calculation + Business Recommendations + ROI
 <img width="1097" height="787" alt="MCA5" src="https://github.com/user-attachments/assets/e9d7786c-0fe1-4a8c-9dac-c1ca68be8ae0" />
 
 ---
-
-## 📈 Customer Lifetime Value
-
-CLV calculated per segment using:
-
-```
-CLV = Avg Purchase Value × Total Purchases × (Tenure in Years)
-```
-
-Champions show significantly higher CLV justifying premium retention investment, while Lost customers show CLV often below the cost of a retention campaign.
-
----
-
 ## 💰 Retention ROI
 
-```
-Target Segment:     At-Risk Customers
-Customers:          574
-Campaign Cost:      $8,610  ($15 per customer)
-Revenue Saved:      $22,752 (30% save rate assumed)
-Net Gain:           $14,142
-ROI:                164%
-```
-
-> Assumptions: $15 retention offer cost per customer, 30% of at-risk customers successfully retained. Adjust `retention_cost` and `save_rate` variables in Cell 22 for your actual campaign costs.
+<img width="543" height="291" alt="image" src="https://github.com/user-attachments/assets/c7161bc8-1f2d-403f-970d-2c9061da4219" />
 
 ---
 
