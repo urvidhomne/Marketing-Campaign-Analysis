@@ -18,6 +18,7 @@ A marketing team is spending budget sending campaigns to **all customers equally
 
 **Who is NOT worth spending money on?**
 → Lost Customers — 606 customers, avg CLV $131. Retention cost exceeds their lifetime value. One reactivation email only, then remove from active marketing list.
+
 ---
 ## 💡 Key Business Findings
 <img width="615" height="162" alt="image" src="https://github.com/user-attachments/assets/f36d9e5c-bb88-4bf7-9dfe-862c8632dd3d" />
