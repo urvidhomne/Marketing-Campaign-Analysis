@@ -9,10 +9,13 @@ A marketing team is spending budget sending campaigns to **all customers equally
 
 **Who are our best customers?**
 → Champions segment — 541 customers, avg CLV $1,248, 0% churn rate. Identified through KMeans clustering on RFM scores. 
+
 **Who is about to leave?**
 → At-Risk segment — 574 customers, 27% churn rate. Predicted using LightGBM churn model with 60.3% recall. 
+
 **Where should we spend our retention budget?**
 → At-Risk customers. $15 retention offer per customer yields 164% ROI. Champions need VIP treatment, not discounts. 
+
 **Who is NOT worth spending money on?**
 → Lost Customers — 606 customers, avg CLV $131. Retention cost exceeds their lifetime value. One reactivation email only, then remove from active marketing list.
 ---
