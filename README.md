@@ -85,10 +85,6 @@ A 164% ROI estimate communicates more to a marketing team than a 0.82 ROC-AUC sc
 ---
 
 ## 👩‍💻 Author
-**Urvi Dhomne**
-Washington DC | Open to Relocate
-[LinkedIn](https://linkedin.com/in/urvidhomne) | [GitHub](https://github.com/urvidhomne)
-
+**Urvi Dhomne** 
 ---
-
 *Dataset: Kaggle Marketing Campaign | Tools: Python, Scikit-learn, XGBoost | **Source:** [Kaggle — Marketing Campaign Dataset](https://www.kaggle.com/datasets/rodsaldanha/arketing-campaign/data)*
